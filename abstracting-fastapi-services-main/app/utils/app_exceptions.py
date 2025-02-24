@@ -42,4 +42,10 @@ class AppException(object):
             status_code = 404
             AppExceptionCase.__init__(self, status_code, context)
 
-
+    class FooCreateTodo(AppExceptionCase):
+        def __init__(self, context: dict = None):
+            """
+            Todo creation failed
+            """
+            status_code=500
+            AppExceptionCase.__init__(self, status_code, context)
