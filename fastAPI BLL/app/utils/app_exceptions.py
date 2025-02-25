@@ -49,3 +49,11 @@ class AppException(object):
             """
             status_code=500
             AppExceptionCase.__init__(self, status_code, context)
+    
+    class FooGetTodo(AppExceptionCase):
+        def __init__(self, context: dict = None):
+            """
+            Todo not found
+            """
+            status_code = 404
+            AppExceptionCase.__init__(self, status_code, context)

@@ -37,3 +37,5 @@ async def custom_app_exception_handler(request, e):
 app.include_router(router.router)
 
 
+
+
